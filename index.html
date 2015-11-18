@@ -4,9 +4,41 @@
   <meta charset="utf-8">
   <title>Une reproduction Mondrian</title>
   <style type="text/css">
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  #block-container {
+  width:100%;
+  background-color:white;
+  height:100%;
+}
+
+#block-left {
+  width:25%;
+  background-color:white;
+  border-right:solid;3px;
+  height:50%;
+  float:left;
+}
+#block-right {
+  box-sizing:border-box;
+  width:75%;
+  background-color: red;
+  border-top: solid;10px;
+  border-left: solid;10px;
+  height:50%;
+  float:right;
+}
+
   </style>
 </head>
 <body>
-  <div id="wrapper">bla</div>
+  <div id="block-container">
+    <div id="block-left"></div>
+    <div id="block-right"></div>
+  </div>
+
+
 </body>
 </html>
